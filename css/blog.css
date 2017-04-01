@@ -1,0 +1,210 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Motohaus's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  opacity: 0.8;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  -webkit-transition:  height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.blog-masthead.smaller {
+  height: 60px;
+}
+
+.blog-masthead .menu-item img {
+  height: 36px;
+  line-height: 80px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.blog-masthead.smaller .menu-item img {
+  height: 24px;
+  line-height: 60px;
+  width: 200px;
+}
+
+.blog-masthead li {       
+    font-family: 'OpenSans', sans-serif;
+    font-size: medium;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 80px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-weight: bolder;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.blog-masthead.smaller li {
+    line-height: 60px;
+}
+
+.blog-masthead li:not(:first-child) {
+    float: right;
+}
+
+.blog-masthead li a {
+    color: #000000;
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.blog-description {
+  font-size: 20px;
+  font-family: 'OpenSans', sans-serif;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+
+.sidebar-module-inset {
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-module li {
+  display: block;
+}
+
+.sidebar-module .no-label {
+  display: inline;
+  padding-right: 10px;
+}
+
+.sidebar-module .has-label {
+  padding: 10px;
+}
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  font-family: 'OpenSans', sans-serif;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  font-family: 'SourceSansPro', sans-serif;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

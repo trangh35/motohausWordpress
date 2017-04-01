@@ -1,0 +1,1805 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+/*-------------------------------------------------------------------
+    Shared Classes  !!! Don't edit. Everything "floated" relies on these rules
+===================================================================*/
+
+.left {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.right {
+    float: right;
+    margin: 0;
+}
+
+.half {
+    width: 49%;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.bm {
+    margin: 0 0 10px 0;
+}
+
+.tm {
+    margin: 10px 0 0 0;
+}
+
+/*-------------------------------------------------------------------
+    Float Clears !!! Don't edit. Everything "floated" relies on these rules
+===================================================================*/
+
+.clear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+
+* html .clear {
+    height: 1%;
+}
+
+.clear {
+    display: block;
+}
+
+/* End hide from IE-mac */
+
+/*-------------------------------------------------------------------
+    Layout
+===================================================================*/
+
+#masterwrapper
+/*Wraps the wrapper with 16px to each side*/ {
+    width: 100%;
+}
+
+#wrapper
+/*Wraps all content on page*/ {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#header {
+  height: 160px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  -webkit-transition:  height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+#header img {
+    height: 36px;
+    line-height: 80px; 
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#main {
+    padding: 0;
+}
+
+#footer {
+    padding: 0 10px;
+}
+
+#alpha {
+    float: left;
+    padding: 10px 0;
+    width: 164px;
+}
+
+#beta {
+    float: right;
+    padding: 10px 10px 10px 0;
+    width: 744px;
+}
+
+#gamma {
+    padding: 0 10px;
+    width: 918px;
+}
+
+/*-------------------------------------------------------------------
+    #beta Columns - Correct usage of columns will always sum to 9
+===================================================================*/
+
+#beta .c1 {
+    width: 164px;
+}
+
+#beta .c2 {
+    width: 222px;
+}
+
+#beta .c3 {
+    width: 280px;
+}
+
+#beta .c4 {
+    width: 338px;
+}
+
+#beta .c5 {
+    width: 396px;
+}
+
+#beta .c6 {
+    width: 454px;
+}
+
+#beta .c7 {
+    width: 512px;
+}
+
+#beta .c8 {
+    width: 570px;
+}
+
+#beta .mid {
+    width: 367px;
+}
+
+/*-------------------------------------------------------------------
+    #gamma Columns - Correct usage of columns will always sum to 10
+===================================================================*/
+
+#gamma .c1 {
+    width: 222px;
+}
+
+#gamma .c2 {
+    width: 280px;
+}
+
+#gamma .c3 {
+    width: 338px;
+}
+
+#gamma .c4 {
+    width: 396px;
+}
+
+#gamma .c5 {
+    width: 454px;
+}
+
+#gamma .c6 {
+    width: 510px;
+}
+
+#gamma .c7 {
+    width: 570px;
+}
+
+#gamma .c8 {
+    width: 628px;
+}
+
+#gamma .c9 {
+    width: 686px;
+}
+
+/*-------------------------------------------------------------------
+    #fluid layout
+===================================================================*/
+
+#fluid #wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#fluid #header {
+    padding: 0;
+}
+
+#delta {
+    padding: 0 10px;
+}
+
+#delta .content {
+    margin-right: 3%;
+    width: 70%;
+}
+
+#delta .side {
+    float: right;
+    width: 26%;
+}
+
+@media (max-width: 1200px) {
+    #header {
+        width: 100%;
+    }
+    
+    .left,
+    .right {
+        float: none !important;
+    }
+
+    #masterwrapper
+  /*Wraps the wrapper with 16px to each side*/ {
+        width: 100%;
+    }
+
+    #wrapper
+  /*Wraps all content on page*/ {
+        width: 100%;
+    }
+
+    #fixednav #main {
+        background: #FFF !important;
+        padding: 0;
+    }
+
+    #footer {
+        padding: 0 10px;
+    }
+
+    #alpha {
+        display: none;
+    }
+
+    #beta {
+        float: none;
+        padding: 10px 0 !important;
+        width: 100%;
+    }
+
+    #gamma {
+        padding: 0;
+        width: 100%;
+    }
+
+    /*-------------------------------------------------------------------
+      #beta Columns - Correct usage of columns will always sum to 9
+  ===================================================================*/
+
+    #beta .c1,
+    #beta .c2,
+    #beta .c3,
+    #beta .c4,
+    #beta .c5,
+    #beta .c6,
+    #beta .c7,
+    #beta .c8,
+    #beta .mid {
+        width: 100%;
+    }
+
+    /*-------------------------------------------------------------------
+      #gamma Columns - Correct usage of columns will always sum to 10
+  ===================================================================*/
+
+    #gamma .c1,
+    #gamma .c2,
+    #gamma .c3,
+    #gamma .c4,
+    #gamma .c5,
+    #gamma .c6,
+    #gamma .c7,
+    #gamma .c8,
+    #gamma .c9 {
+        width: 100%;
+    }
+
+    /* Force table to not be like tables anymore */
+    #allbrands table,
+    #allbrands thead,
+    #allbrands tbody,
+    #allbrands th,
+    #allbrands td,
+    #allbrands tr,
+    #homepagefeatures table,
+    #homepagefeatures thead,
+    #homepagefeatures tbody,
+    #homepagefeatures th,
+    #homepagefeatures td,
+    #homepagefeatures tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #allbrands thead tr,
+    #homepagefeatures thead tr {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+    }
+
+    #allbrands td,
+    #homepagefeatures td {
+        /* Behave  like a "row" */
+        border: none !important;
+        padding: 10px 0 !important;
+        position: relative;
+        width: 100% !important;
+    }
+
+    #allbrands td:before,
+    #homepagefeatures td:before {
+        left: 6px;
+        padding-right: 10px;
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        white-space: nowrap;
+        width: 35%;
+    }
+
+    #ctl00_MainContentPlaceHolder_NarrowByCategoryPanel,
+    #ctl00_MainContentPlaceHolder_NarrowByBrandPanel {
+        display: none;
+    }
+
+    #nav #home,
+    #nav #accountinfo,
+    #nav #contact,
+    #nav #logout {
+        display: none;
+    }
+
+    #headermenu {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    #headermenu .AspNet-Menu-Horizontal {
+        position: relative !important;
+    }
+
+    #headermenu ul ul {
+        background: #000 !important;
+    }
+
+    #headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu {
+        width: 100%;
+    }
+
+    #headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu li {
+        width: 100% !important;
+    }
+
+    #headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul {
+        width: 100% !important;
+        z-index: 9000;
+    }
+
+    #headernav {
+        height: auto !important;
+        margin: 0;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    #headernav #selectedapplication {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 43%;
+    }
+
+    #main img {
+        max-width: 100%;
+    }
+
+    #branding #logo img {
+        max-width: 90%;
+    }
+}
+
+/*---------------------------------------------------------
+-- Messages
+-- ======================================================*/
+
+.message_error {
+    background: #FAEBEB url(/public/images/icons/16/19.png) center no-repeat;
+    background-position: 15px 50%;
+    /* x-pos y-pos */
+    border-bottom: 2px solid #CC3300;
+    border-top: 2px solid #CC3300;
+    margin: 5px 0;
+    padding: 10px 20px 10px 45px;
+    text-align: left;
+}
+
+.message_warning {
+    background: #fff6bf url(/public/images/icons/16/10.png) center no-repeat;
+    background-position: 15px 50%;
+    /* x-pos y-pos */
+    border-bottom: 2px solid #ffd324;
+    border-top: 2px solid #ffd324;
+    margin: 5px 0;
+    padding: 10px 20px 10px 45px;
+    text-align: left;
+}
+
+.message_info {
+    background: #F8FAFC url(/public/images/icons/16/2.png) center no-repeat;
+    background-position: 15px 50%;
+    /* x-pos y-pos */
+    border-bottom: 2px solid #B5D4FE;
+    border-top: 2px solid #B5D4FE;
+    margin: 5px 0;
+    padding: 10px 20px 10px 45px;
+    text-align: left;
+}
+
+.message_success {
+    background: #DAF1DA url(/public/images/icons/16/71.png) center no-repeat;
+    background-position: 15px 50%;
+    /* x-pos y-pos */
+    border-bottom: 2px solid #339933;
+    border-top: 2px solid #339933;
+    margin: 5px 0;
+    padding: 10px 20px 10px 45px;
+    text-align: left;
+}
+
+ul.AspNet-Menu {
+    position: relative;
+}
+
+ul.AspNet-Menu,
+ul.AspNet-Menu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.AspNet-Menu li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+ul.AspNet-Menu li a,
+ul.AspNet-Menu li span {
+    display: block;
+    text-decoration: none;
+}
+
+ul.AspNet-Menu ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Add more rules here if your menus have more than three (3) tiers */
+
+ul.AspNet-Menu li:hover ul ul,
+ul.AspNet-Menu li.AspNet-Menu-Hover ul ul {
+    visibility: hidden;
+}
+
+/* Add more rules here if your menus have more than three (3) tiers */
+
+ul.AspNet-Menu li:hover ul,
+ul.AspNet-Menu li li:hover ul,
+ul.AspNet-Menu li li li:hover ul,
+ul.AspNet-Menu li.AspNet-Menu-Hover ul,
+ul.AspNet-Menu li li.AspNet-Menu-Hover ul,
+ul.AspNet-Menu li li li.AspNet-Menu-Hover ul {
+    visibility: visible;
+}
+
+.AspNet-Menu-Vertical ul.AspNet-Menu li {
+    width: 100%;
+}
+
+
+/*-------------------------------------------------------
+CSS Stylesheet
+
+ This section of the StyleSheet defines the look & feel of the website and can be edited freely without
+ disturbing the layout of the site.
+
+///////////////////////////////////////////////////////*/
+
+/*-------------------------------------------------------------------
+Layout
+===================================================================*/
+
+#header {
+    background: #FFFFFF;
+}
+
+#main {
+    background: #FFF;
+}
+
+#fixednav #main {
+    background: #FFF url('/public/images/bg_fixed_nav.png');
+    background-position: left;
+    background-repeat: repeat-y;
+}
+
+#gamma {
+    padding-top: 10px;
+}
+
+/*-------------------------------------------------------------------
+~~Base
+===================================================================*/
+
+body {
+    background: url('/public/images/body_bg.png') #666;
+    background-position: center;
+    background-repeat: repeat-y;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+img {
+    border: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -.5px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 1.286;
+}
+
+h3 {
+    background: #F9F9F9;
+    border: 1px solid #AAA;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+a {
+    color: #0F2699;
+}
+
+a:hover {
+    color: #0850B0;
+}
+
+/*-------------------------------------------------------------------
+~~Header
+===================================================================*/
+
+/*TOP Most Portion - Logo & Links */
+
+#branding #logo {
+    float: left;
+    padding: 10px 0;
+}
+
+#branding li {
+    float: right;
+    font-size: medium;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 80px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-weight: bolder;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#branding ul a {
+    background: #F0F0F0;
+    border-bottom: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#branding ul a:hover {
+    border-bottom: 2px solid #AAA;
+    padding: 5px 10px 10px 10px;
+}
+
+/*STACKED Navigation*/
+
+#headernav {
+    background: #000;
+    color: #FFF;
+    font-size: 11px;
+    height: 90px;
+    margin: 0 -10px;
+}
+
+#headernav a {
+    color: #FFF;
+}
+
+#headernav #categories,
+#headernav #ourshop {
+    margin: 0 0 0 10px;
+    padding: 10px 0;
+}
+
+#headernav #categories a,
+#headernav #ourshop a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#headernav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#headernav a:hover {
+}
+
+#headernav #selectedapplication {
+    float: right;
+    padding: 10px 0;
+    text-align: right;
+}
+
+/*MENU Navigation*/
+
+#headermenu {
+    background: #000;
+    color: #FFF;
+    margin: 0 -10px;
+    padding: 10px 0;
+    position: relative;
+}
+
+#headermenu a {
+    color: #FFF;
+}
+
+/* The menu adapter renders an unordered list (ul) in HTML for each tier in the menu. */
+
+/* So, effectively says: style all tiers in the menu this way... */
+
+#headermenu ul ul {
+    background: url('/public/images/bg_blk_85.png');
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+
+/* Use this rule create the common appearance of each menu item. */
+
+#headermenu ul.AspNet-Menu li {
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+
+/* Use this rule create the common appearance of each menu item. */
+
+#headermenu ul.AspNet-Menu li.AspNet-Menu-WithChildren {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Within each menu item is a link or a span, depending on whether or not the MenuItem has defined it's */
+
+/* NavigateUrl property. By setting a transparent background image here you can effectively layer two images */
+
+/* in each menu item. One comes from the CSS rule (above) governing the li tag that each menu item has. */
+
+/* The second image comes from this rule (below). */
+
+#headermenu ul.AspNet-Menu li a,
+#headermenu ul.AspNet-Menu li span {
+}
+
+/* When a menu item contains no submenu items it is marked as a'leaf'and can be styled specially by this rule. */
+
+#headermenu ul.AspNet-Menu li.AspNet-Menu-Leaf a,
+#headermenu ul.AspNet-Menu li.AspNet-Menu-Leaf span {
+    border-bottom: 0;
+    font-weight: normal;
+    padding: 4px 2px 4px 8px;
+}
+
+/* While you hover over a list item (li) you are also hovering over a link or span because */
+
+/* the link or span covers the interior of the li. So you can set some hover-related styles */
+
+/* in the rule (above) for the li but set other hover-related styles in this (below) rule. */
+
+#headermenu ul.AspNet-Menu li a:hover,
+#headermenu ul.AspNet-Menu li span.Asp-Menu-Hover {
+}
+
+#headermenu ul.AspNet-Menu li.AspNet-Menu-Leaf a:hover {
+    background: url('/public/images/bg_blk_85.png');
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* When the Menu control's Orientation property is Horizontal the adapter wraps the menu with DIV */
+
+/* whose class is AspNet-Menu-Horizontal. */
+
+/* Note that the example menu in this web site uses absolute positioning to force the menu to occupy */
+
+/* a specific place in the web page. Your web site will likely use a different technique to position your */
+
+/* menu. So feel free to change all the properties found in this CSS rule if you clone this style sheet. */
+
+/* There is nothing, per se, that is magical about these particular property value choices. They happen to */
+
+/* work well for the sample page used to demonstrate an adapted menu. */
+
+#headermenu .AspNet-Menu-Horizontal {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 300;
+}
+
+/* This rule controls the width of the top tier of the horizontal menu. */
+
+/* BE SURE TO MAKE THIS WIDE ENOUGH to accommodate all of the top tier menu items that are lined */
+
+/* up from left to right. In other words, this width needs to be the width of the individual */
+
+/* top tier menu items multiplied by the number of items. */
+
+#headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu {
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+
+/* the topmost tier's appearance. */
+
+/* Remember that only the topmost tier of the menu is horizontal. The second and third tiers are vertical. */
+
+/* So, they need a much smaller width than the top tier. Effectively, the width specified here is simply */
+
+/* the width of a single menu item in the second and their tiers. */
+
+#headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul {
+    left: 0;
+    top: 100%;
+    width: 38em;
+}
+
+/* Generally, you use this rule to set style properties that pertain to all menu items. */
+
+/* One exception is the width set here. We will override this width with a more specific rule (below) */
+
+/* That sets the width for all menu items from the second tier downward in the menu. */
+
+#headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu li {
+    width: 9em;
+}
+
+/* This rule establishes the width of menu items below the top tier. This allows the top tier menu items */
+
+/* to be narrower, for example, than the sub-menu items. */
+
+/* This value you set here should be slightly larger than the left margin value in the next rule. See */
+
+/* its comment for more details. */
+
+#headermenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul li {
+    text-align: left;
+    width: 19em;
+}
+
+#headermenu #selectedapplication_menu {
+    padding: 0 10px;
+}
+
+#headermenu #selectedapplication_menu a {
+    margin: 0px 0 0 5px;
+}
+
+/* End of header div */
+
+#endheader {
+}
+
+/*-------------------------------------------------------------------
+~~Fixed Nav
+===================================================================*/
+
+#alpha #welcome {
+    background: url('/public/images/bg_blk_65.png');
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    color: #fff;
+    padding: 10px;
+}
+
+#alpha #welcome ul {
+    border-top: 1px solid #fff;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#alpha #welcome a {
+    color: #FFF;
+}
+
+#alpha h4 {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+#alpha #categorylist,
+#alpha #brandlist {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+#alpha #categorylist ul,
+#alpha #brandlist ul {
+    border-top: 1px solid #AAA;
+    font-size: 11px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+/*-------------------------------------------------------------------
+~~Footer
+===================================================================*/
+
+#footer {
+}
+
+#footer a {
+    color: #FFF;
+}
+
+#footer #copyright {
+    color: #FFF;
+    float: left;
+    padding: 10px 0;
+}
+
+#footer #poweredby {
+    float: right;
+    padding: 10px 0;
+}
+
+/*-------------------------------------------------------------------
+~~AJAX
+===================================================================*/
+
+.popup {
+    background: url('/public/images/bg_blk_85.png');
+    border: 1px solid #000;
+    color: #FFF;
+    padding: 15px;
+}
+
+.popup h2 {
+    color: #FFF;
+    margin-top: 0;
+}
+
+.popup .action {
+    border-top: 1px solid #FFF;
+    padding: 10px 0 0 0;
+}
+
+.display {
+    visibility: hidden;
+}
+
+.updateprogress {
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------
+~~MODULES
+===================================================================*/
+
+.module {
+    background: #F9F9F9;
+    border: 1px solid #AAA;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.module span {
+}
+
+.module .section {
+    border-bottom: 1px solid #AAA;
+}
+
+.module .label {
+    float: left;
+    font-weight: bold;
+    width: 45px;
+}
+
+.module .receipt {
+    display: block;
+    float: right;
+    width: 155px;
+}
+
+.module .title {
+    background: #D1D1D1;
+    border-bottom: 1px solid #A0A0A0;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.module .title .text {
+    padding-top: 2px;
+}
+
+.module .title select {
+    font-size: 11px;
+}
+
+.module .title a {
+    color: #FFF;
+}
+
+.module .empty {
+    border-bottom: 1px solid #DDD;
+    color: #A0A0A0;
+    padding: 20px;
+    text-align: center;
+}
+
+.module_bottom_border {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 15px;
+}
+
+.module_bottom {
+    margin-bottom: 15px;
+}
+
+/*-------------------------------------------------------------------
+~~Default.aspx (HomePage)
+===================================================================*/
+
+#homepagefeatures {
+}
+
+#homepagefeatures table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#homepagefeatures td {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+#homepagefeatures img {
+    margin: 0 0 10px 0;
+}
+
+/*-------------------------------------------------------------------
+~~ItmBrand.aspx (Brands Page)
+===================================================================*/
+
+#allbrands {
+}
+
+#allbrands table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#allbrands td {
+    border-bottom: 1px solid #AAA;
+    border-top: 1px solid #AAA;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+#allbrands img {
+    margin: 0 0 10px 0;
+}
+
+/*-------------------------------------------------------------------
+~~Item.aspx (Product Listing Page)
+===================================================================*/
+
+tr.spec td {
+    border-bottom: 1px dotted #CCC;
+}
+
+td.spec_name {
+    font-weight: bold;
+    width: 25%;
+}
+
+/*-------------------------------------------------------------------
+~~ItmGroup.aspx (Product Listing Page)
+===================================================================*/
+
+#navigationcolumn ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigationcolumn ul ul {
+    padding-left: 10px;
+}
+
+#navigationcolumn li {
+    margin: 2px 0;
+}
+
+#navigationcolumn .options {
+    border-bottom: 1px dotted #000;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+
+#navigationcolumn #vehicle {
+}
+
+#navigationcolumn #brand {
+}
+
+#navigationcolumn #category {
+}
+
+#productcolumn {
+}
+
+#productcolumn table {
+    border-collapse: collapse !important;
+}
+
+#productcolumn td {
+    border: 0;
+    border-bottom: 1px dotted #000 !important;
+    border-top: 1px dotted #000 !important;
+}
+
+/*-------------------------------------------------------------------
+~~ItmGroupDetail.aspx (Product Group Detail Page)
+===================================================================*/
+
+#images {
+    border: 1px solid #AAA;
+    padding: 0;
+}
+
+#mainimage {
+    color: #AAA;
+    padding: 10px;
+    text-align: center;
+}
+
+#mainimage img {
+    padding: 10px;
+}
+
+.additionalimages {
+    background: #f0f0f0;
+    margin: 10px 0 0 0;
+    padding: 10px;
+}
+
+.additionalimages .borderimages input {
+    background: #AAA;
+    padding: 1px;
+    vertical-align: top;
+}
+
+.yourprice {
+    background: #FFF;
+    border: 1px solid #AAA;
+    color: #C20000;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.addtocartbutton {
+    font-weight: bold;
+    padding: 3px;
+    width: 100%;
+}
+
+#reviews {
+}
+
+#reviews .review {
+    background: #FFF;
+    border: 1px solid #000;
+    margin: 0 20px 10px 20px;
+    padding: 5px;
+}
+
+#reviews .reviewheading {
+    background: #000;
+    color: #FFF;
+    margin: -5px;
+    padding: 5px;
+}
+
+/*-------------------------------------------------------------------
+~~ShoppingCart.aspx (Shopping Cart)
+===================================================================*/
+
+#shoppingcart {
+}
+
+#shoppingcartsummary {
+    background: #AAA;
+    color: #FFF;
+    margin: 0 0 0 0;
+    padding: 10px;
+    text-align: right;
+}
+
+#cartactions {
+    padding: 40px 0;
+    text-align: right;
+}
+
+/*-------------------------------------------------------------------
+~~Login.aspx
+===================================================================*/
+
+#login {
+    margin: 0 60px 100px 60px;
+}
+
+#login .label {
+    float: left;
+    margin: 2px 0;
+    padding: 2px 0;
+    width: 150px;
+}
+
+#login br {
+    clear: both;
+}
+
+#login .loginmodule {
+    background: #F0F0F0;
+    border: 1px solid #AAA;
+    padding: 0 10px 10px 10px;
+}
+
+#login .logininstructions {
+    font-weight: bold;
+}
+
+#login .logininputs input {
+    width: 98%;
+}
+
+#login .loginsubmit {
+    border-top: 1px solid #AAA;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+/*-------------------------------------------------------------------
+~~Checkout.aspx
+===================================================================*/
+
+#checkout fieldset .label {
+    float: left;
+    margin: 2px 0;
+    padding: 3px 5px;
+    text-align: right;
+    width: 150px;
+}
+
+#checkout fieldset {
+    border: 0;
+    padding: 0 0 0 50px;
+}
+
+#checkout fieldset .styledinput {
+    border: 1px solid #AAA;
+    margin: 2px 0;
+    padding: 2px 5px;
+    width: 200px;
+}
+
+#checkout fieldset .styledselect {
+    border: 1px solid #AAA;
+    margin: 2px 0;
+    padding: 2px;
+    width: 212px;
+}
+
+#checkout br {
+    clear: both;
+}
+
+#cartsummary {
+    background: #F9F9F9;
+    border-bottom: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: right;
+}
+
+#cartsummary span {
+    padding: 5px 0;
+}
+
+#cartsummary .section {
+    border-bottom: 1px solid #AAA;
+}
+
+#cartsummary .label {
+    float: left;
+    font-weight: bold;
+    width: 750px;
+}
+
+#cartsummary .receipt {
+    display: block;
+    float: right;
+    width: 150px;
+}
+
+#processorder {
+    border-top: 1px solid #AAA;
+    margin: 15px 0 0 0;
+    padding: 5px;
+}
+
+/*-------------------------------------------------------------------
+~~Order.aspx (Order Page)
+===================================================================*/
+
+#orderheading {
+    border-bottom: 2px solid #000;
+    margin-bottom: 15px;
+}
+
+/*-------------------------------------------------------------------
+~~OurShop/Default.aspx (Our Shop Area)
+===================================================================*/
+
+#ourshopnavigation {
+}
+
+#ourshopcontent {
+}
+
+/*-------------------------------------------------------------------
+~~Data Web Controls
+===================================================================*/
+
+.styledtable,
+.DetailsViewStyle {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styledtable td {
+    border: 1px solid #AAA;
+    padding: 5px;
+    text-align: left;
+}
+
+.evenrow {
+    background: #FFF;
+}
+
+.oddrow {
+    background: #FFF;
+}
+
+th {
+    background: #fff url(/public/images/bg_silver.gif) repeat-x left center;
+    border: 1px solid #AAA;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+}
+
+/*Used for Empty Datalists, Gridviews, etc.*/
+
+.empty {
+    border: 5px solid #AAA;
+    color: #AAA;
+    padding: 25px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------
+~~DetailsView
+===================================================================*/
+
+.AspNet-DetailsView {
+    position: relative;
+    width: 100%;
+}
+
+.AspNet-DetailsView textarea {
+    height: 250px;
+    width: 99%;
+}
+
+.AspNet-DetailsView input[type='text'],
+.AspNet-DetailsView input[type='password'] {
+    border: 1px solid #ddd;
+    font-size: 11px;
+    padding: 3px;
+    width: 250px;
+}
+
+div.AspNet-DetailsView-Header,
+div.AspNet-FormView-Header {
+    background: #fff url(/public/images/bg_silver.gif) repeat-x left center;
+    border: 1px solid #ccc;
+    color: #666;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+}
+
+div.AspNet-DetailsView-Data ul {
+}
+
+/* Each field defined for the DetailsView generates an individual list item (li) in the rendered HTML. */
+
+/* Each li effectively is a row in a table (though no table tag is generated by the adapter). */
+
+div.AspNet-DetailsView-Data li {
+    background-color: #FFF;
+    border-bottom: 1px solid #ddd;
+    color: #333333;
+    min-height: 1.4em; /* ADDED for Firefox */
+    padding: 5px 0 !important;
+    vertical-align: middle;
+}
+
+/* Every other field is marked as being "Alternate." */
+
+/* This allows you to define an "alternating row" style (though the adapter doesn't actually generate an HTML table). */
+
+div.AspNet-DetailsView-Data li.AspNet-DetailsView-Alternate {
+    background-color: #F7F7F7;
+}
+
+/* This corresponds to the HeaderText attribute of an <asp:BoundField>. */
+
+span.AspNet-DetailsView-Name {
+    display: block;
+    font-weight: bold;
+    left: 0;
+    padding: 0 5px;
+    position: absolute;
+    text-align: right;
+    width: 35%;
+}
+
+/* This corresponds to the DataField attribute of an <asp:BoundField>. */
+
+span.AspNet-DetailsView-Value {
+    display: block;
+    margin-left: 39%;
+}
+
+/*-------------------------------------------------------------------
+~~Year Make Model Submodel Form
+===================================================================*/
+
+#ymmform {
+    margin: 0;
+    padding: 0;
+}
+
+#ymmform select {
+    color: #000000;
+    margin: 2px 0 2px 0;
+    width: 100%;
+}
+
+#ymmform input {
+    color: #000000;
+    font-weight: bold;
+    margin: 2px 0 2px 0;
+    padding: 2px;
+    width: 100%;
+}
+
+#vehicles {
+    margin: 10px 0;
+}
+
+#vehicles table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#vehicles td {
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#vehicles .make {
+    background: #AAA;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+}
+
+#vehicles .titles {
+    background: #CCC;
+}
+
+#vehicles .partnumber {
+    white-space: nowrap;
+    width: 10%;
+}
+
+#vehicles .year {
+    white-space: nowrap;
+    width: 10%;
+}
+
+#vehicles .specsname,
+#vehicles .specsvalue {
+    font-size: 11px;
+    font-style: oblique;
+}
+
+#vehicles .specsvalue {
+    text-align: left;
+}
+
+#vehicles tr.odd {
+    background: #f3f7fe;
+}
+
+#vehiclefilters a {
+    margin: 0 5px 5px 0;
+}
+
+#groupdetails {
+    background: #f0f0f0;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#tabs {
+    margin: 15px 0;
+}
+
+.filtervehicles {
+    background: #f0f0f0;
+    border: 1px solid #AAA;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.filtervehicles a {
+    margin-right: 5px;
+}
+
+#alpha .search {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+}
+
+#alpha .search input[type=text] {
+    width: 100px;
+}
+
+#alpha .search h4 {
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 5px;
+}
+
+/*-------------------------------------------------------------------
+~~Demo
+===================================================================*/
+
+.demo {
+    background: url('/public/images/bg_green.gif');
+    color: #FFF;
+    font-family: 'Lucida Grande', Verdana, Arial, Helvetica, Sans-serif;
+    padding: 10px;
+}
+
+.demo h1 {
+    border: 0;
+    color: #fff;
+    font-family: 'Lucida Grande', Verdana, Arial, Helvetica, Sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.demo a,
+.demo a:hover {
+    color: #fff;
+}
+
+.customerlevel {
+    text-align: right;
+}

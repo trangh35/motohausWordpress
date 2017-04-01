@@ -1,0 +1,25 @@
+/*
+Theme Name: Motohaus
+Author: Han Trang
+Description: Motohaus template
+Version: 0.0.1
+Tags: motohaus
+*/
+
+
+#logo-image { max-height: 40px; }
+
+#menu {font-family: Verdana, Arial, Helvetica, OpenSans,
+   sans-serif; font-size:1em; color:blue; }
+   
+.frontpage.content {
+	  -moz-column-count: 3;
+	  -moz-column-gap: 10px;
+	  -moz-column-rule: none;
+	  -webkit-column-count: 3;
+	  -webkit-column-gap: 10px;
+	  -webkit-column-rule: none;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: none;
+	}
